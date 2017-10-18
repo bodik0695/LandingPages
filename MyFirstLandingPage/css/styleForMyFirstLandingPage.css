@@ -1,0 +1,372 @@
+.header_content, .secondBanner_content, .aboutUs, .team, .work, .services, .features, .contact_content, .footer {
+  width: 1200px;
+  margin: 0 auto; }
+
+.aboutUs_header, .team_header, .work_header, .services_header, .features_header, .contact_header {
+  margin-top: 80px;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 10px solid #e1e6ea; }
+
+.secondBanner_content_leftBtn:hover, .secondBanner_content_rightBtn:hover, .work_btn a:hover {
+  border-color: #23b7a4;
+  background: red; }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline; }
+
+body {
+  font-family: Arial Narrow; }
+
+h2 {
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+.btn {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px 25px;
+  color: #fff;
+  background: none; }
+
+.bannerSwitch input[type="radio"] {
+  margin-left: 5px;
+  -webkit-appearance: none;
+  border: none;
+  width: 13px;
+  height: 13px;
+  background: url(../images/Radio/radio.png) center no-repeat;
+  background-size: 13px; }
+.bannerSwitch input[type="radio"]:checked {
+  background: url(../images/Radio/radioChecked.png) left center no-repeat; }
+
+.header {
+  background-color: #1d2126;
+  height: 80px;
+  min-width: 1200px; }
+  .header_content_logo {
+    float: left;
+    padding-left: 15px;
+    padding-top: 30px; }
+  .header_content_navigation {
+    margin-left: 520px;
+    padding-top: 30px;
+    bottom: 100px; }
+
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: 20px; }
+
+.navigation li {
+  float: left;
+  list-style-type: none; }
+  .navigation li a {
+    display: inline;
+    text-transform: uppercase;
+    color: #a4aead;
+    margin-right: 10px;
+    padding: 4px 8px;
+    border: 1px solid #1d2126;
+    border-radius: 4px; }
+  .navigation li a:hover {
+    border-color: #5b6168; }
+.navigation li:nth-child(1) > a {
+  color: #23b7a4;
+  border-color: #23b7a4; }
+
+.banners {
+  min-width: 1200px;
+  height: 660px; }
+  .banners_secondBanner {
+    height: inherit; }
+
+.secondBanner {
+  background: #3a454d; }
+  .secondBanner_backgroundImage {
+    width: 100%;
+    height: inherit; }
+  .secondBanner_content {
+    height: 620px;
+    margin-top: -660px;
+    padding-top: 230px;
+    position: relative; }
+    .secondBanner_content_header {
+      margin-left: 15px;
+      color: #fff; }
+    .secondBanner_content_text {
+      margin-top: 35px;
+      margin-left: 15px;
+      color: #a5aab4; }
+    .secondBanner_content_leftBtn, .secondBanner_content_rightBtn {
+      margin-left: 15px;
+      margin-top: 40px;
+      float: left; }
+  .secondBanner_bannerSwitch {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 1050px; }
+
+.bannerSwitch input[type="radio"] {
+  margin-left: 5px;
+  -webkit-appearance: none;
+  border: none;
+  width: 13px;
+  height: 13px;
+  background-image: url(../images/Radio/radio.png) center no-repeat !important;
+  background-size: 13px; }
+.bannerSwitch input[type="radio"]:checked {
+  background-image: url(../images/Radio/radioChecked.png) left center no-repeat !important; }
+
+.aboutUs {
+  height: 660px; }
+  .aboutUs_text {
+    margin-top: 60px;
+    margin-left: 15px;
+    color: #a5aab4; }
+    .aboutUs_text p {
+      margin-bottom: 30px; }
+  .aboutUs_list {
+    margin-top: -220px;
+    margin-left: 700px;
+    list-style-type: decimal-leading-zero; }
+    .aboutUs_list_subtitle {
+      text-transform: uppercase; }
+    .aboutUs_list_text {
+      color: #a5aab4;
+      margin-top: 15px;
+      margin-bottom: 25px; }
+
+.bigSocialRef img {
+  background-size: 60px;
+  background-color: #c8cdd0;
+  text-decoration: none;
+  margin-top: 30px; }
+.bigSocialRef img:hover {
+  background-color: #d0d5d9; }
+
+.team {
+  height: 660px;
+  overflow: hidden; }
+  .team_member {
+    margin-top: 50px;
+    margin-right: 30px;
+    float: left; }
+
+.member {
+  background-color: #d4dade;
+  width: 262px;
+  height: 375px;
+  overflow: hidden; }
+  .member_namePosition {
+    width: 262px;
+    height: 75px;
+    background-color: #e1e6ea;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-top: -5px; }
+    .member_namePosition b {
+      text-transform: uppercase; }
+    .member_namePosition p {
+      padding-top: 5px; }
+  .member_socialRef {
+    position: relative;
+    width: 262px;
+    height: 176px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 125px; }
+    .member_socialRef a:first-child {
+      margin-left: 60px; }
+
+.member:hover .member_namePosition {
+  color: #fff;
+  background-color: #3a454d; }
+
+.member:hover .member_socialRef {
+  top: -390px; }
+
+.mediumSocialRef img {
+  height: 50px;
+  width: 50px;
+  background-color: #3a454d; }
+
+.work_section {
+  height: 900px;
+  background-color: #3a454d;
+  min-width: 1200px; }
+
+.work_header {
+  color: #fff;
+  padding-top: 80px;
+  border: none; }
+.work_partnership {
+  margin-top: 30px;
+  margin-right: 30px;
+  float: left; }
+.work_btn {
+  margin-top: 650px;
+  margin-left: -60px;
+  text-align: center; }
+
+.project {
+  width: 360px;
+  height: 265px;
+  overflow: hidden; }
+  .project_ref div {
+    position: relative;
+    top: 280px;
+    width: 360px;
+    height: 267px;
+    background-color: rgba(148, 151, 154, 0.5);
+    overflow: inherit; }
+  .project_ref img {
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 175px; }
+  .project_ref p {
+    position: absolute;
+    width: 342px;
+    height: 60px;
+    color: #fff;
+    background-color: #292f36;
+    margin-top: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-transform: uppercase; }
+
+.project:hover div {
+  top: -270px; }
+
+.services {
+  height: 900px; }
+  .services_content {
+    float: left;
+    margin-top: 80px;
+    margin-right: 70px;
+    text-align: center; }
+    .services_content_header {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-left: 15px; }
+    .services_content_text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #a5aab4; }
+
+.features_section {
+  height: 740px;
+  background-color: #3a454d;
+  min-width: 1200px; }
+
+.features_header {
+  color: #fff;
+  padding-top: 80px;
+  border: none; }
+.features_content {
+  float: left;
+  width: 360px;
+  margin-right: 30px;
+  margin-top: 80px;
+  color: #fff; }
+  .features_content_subtitle {
+    text-transform: uppercase;
+    margin-top: 50px; }
+  .features_content_text {
+    margin-top: 30px; }
+
+.contact {
+  height: 750px; }
+  .contact_header {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px; }
+  .contact img {
+    margin-top: 60px;
+    width: 100%;
+    min-width: 1200px;
+    height: 300px; }
+  .contact_content_subtitle {
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-left: 5px; }
+  .contact_content_text {
+    margin-top: 30px;
+    color: #a5aab4; }
+  .contact_form {
+    margin-top: -350px;
+    margin-right: 100px; }
+
+.form {
+  position: relative;
+  background-color: #fff;
+  height: 400px;
+  width: 550px;
+  float: right; }
+  .form div {
+    color: #8d8f92; }
+  .form_nameCaption {
+    padding-top: 30px;
+    margin-left: 30px;
+    text-transform: uppercase; }
+  .form_emailCaption {
+    margin-top: -77px;
+    margin-left: 290px;
+    text-transform: uppercase; }
+  .form_messageCaption {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-transform: uppercase; }
+  .form_nameArea, .form_emailArea {
+    height: 50px;
+    width: 240px;
+    background-color: #e2e5e8;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px; }
+  .form_nameArea {
+    margin-left: 25px; }
+  .form_emailArea {
+    margin-left: 285px; }
+  .form_messageArea {
+    height: 150px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    background-color: #e2e5e8;
+    border-radius: 4px;
+    border: none; }
+  .form_btn {
+    border-color: #23b7a4;
+    background: #23b7a4;
+    margin-left: 30px; }
+
+.footerSection {
+  width: 100%;
+  min-width: 1200px;
+  height: 90px;
+  color: #fff;
+  background-color: #3a454d; }
+
+.footer_copy {
+  padding-left: 15px;
+  padding-top: 40px; }
+.footer_ref {
+  position: relative;
+  margin-left: 1000px;
+  top: -20px; }
+
+.smallSocialRef {
+  float: left;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=styleForMyFirstLandingPage.css.map */

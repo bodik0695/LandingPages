@@ -1,0 +1,7 @@
+logo - 100x20 px
+banner - 1900x660 px
+members photo - 262x300 px
+work - 360x265 px
+services - 50x50 px
+features - 360x240 px
+contact (map) - 1900x346 px
