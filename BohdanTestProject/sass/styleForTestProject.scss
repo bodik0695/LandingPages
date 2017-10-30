@@ -149,18 +149,11 @@ body{
 		margin-top: 100px;
 		padding-bottom: 100px;
 		display: flex;
-		//flex-direction: row;
+		flex-direction: row;
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 		justify-content: center;
-		//display:-webkit-flex;
-    	//display:-moz-flex;
-    	//display:-moz-box;
-    	display:-ms-flexbox; // for IE
-    	display:-webkit-box; // for Safari
-		-webkit-box-pack: center;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: reverse;
+		
 		z-index: 3;
 	}
 	&_trialClass{
