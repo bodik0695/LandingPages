@@ -73,17 +73,25 @@ body {
   top: 0;
   display: flex;
   justify-content: center;
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-orient: horizontal; }
+  /*display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-orient: horizontal;*/
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap; }
   .pageNav_list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-wrap: wrap; }
   .pageNav_logo {
     display: inline-block;
     margin: 0 140px; }
   .pageNav_listItem {
+    float: left;
     margin-left: 20px;
     list-style-type: none; }
   .pageNav_link {
@@ -129,6 +137,10 @@ body {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: center;
     z-index: 3; }
   .slider_trialClass {
     margin-top: 100px; }
@@ -206,7 +218,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: center; }
 
 .yogaClass {
   min-height: 300px;
@@ -218,8 +234,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  float: left;
-  justify-content: center; }
+  justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap; }
   .yogaClass_img {
     background: #5b6ceb;
     height: 300px;
@@ -244,10 +263,13 @@ body {
 .gallery {
   overflow: hidden;
   clear: left;
+  padding-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 150px; }
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-pack: center; }
   .gallery_imgBlock {
     position: relative;
     width: 480px;
@@ -295,7 +317,10 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-pack: center; }
   .aboutUs_information {
     margin-left: 20px; }
   .aboutUs_title {
@@ -365,6 +390,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: center;
     z-index: 3; }
   .features_feature {
     float: left;
@@ -399,10 +428,16 @@ body {
   clear: left;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap; }
   .prices_buyNow {
     margin-top: 100px;
+    margin-right: 30px;
     float: left; }
+  .prices_buyNow:nth-child(3) {
+    margin-right: 0; }
 
 .buyNow {
   width: 360px;
@@ -413,12 +448,18 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); }
   .buyNow_title {
     display: flex;
     justify-content: center;
     align-items: center;
     order: -2;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-order: -2;
     color: #fff;
     font-size: 50px;
     height: 150px;
@@ -436,13 +477,18 @@ body {
     padding-top: 20px; }
   .buyNow_text {
     text-transform: uppercase;
-    display: flex;
     position: relative;
     top: 50px;
+    display: flex;
     order: -1;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-order: -1;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: center; }
   .buyNow_time, .buyNow_advicer {
     margin-top: 50px; }
   .buyNow_button {
@@ -454,12 +500,16 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
     top: 100px;
     color: #fff;
     font-size: 1.3em; }
   .buyNow_buttonLink:hover {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; }
   .buyNow_buttonLink:hover ~ .buyNow_title {
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; }
+  .buyNow_buttonLink:hover .buyNow_title {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; }
 
 .bloquotes {
@@ -509,7 +559,10 @@ body {
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-pack: end; }
   .bloquotes_infoPosition {
     color: #777; }
   .bloquotes_infoName {
@@ -535,7 +588,10 @@ body {
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center; }
   .nextTrainer_previousBtn {
     margin-left: 5px;
     width: 7px;
@@ -551,7 +607,10 @@ body {
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center; }
   .nextTrainer_nextBtn {
     margin-right: 5px;
     width: 7px;
@@ -587,7 +646,10 @@ body {
     font-family: Arial;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-wrap: wrap; }
   .pageFooter_about {
     display: block;
     margin-top: 100px;
@@ -596,16 +658,22 @@ body {
     display: inline-block;
     margin-top: 100px; }
   .pageFooter_copy {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: relative;
     z-index: 1;
     clear: left;
     min-height: 100px;
+    height: 100px;
     background: #5363d8;
-    color: #fff; }
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -ms-flex-wrap: wrap; }
 
 .pageFooterAbout_title {
   text-transform: uppercase;

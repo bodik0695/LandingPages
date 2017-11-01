@@ -85,19 +85,27 @@ body{
 	top: 0;
 	display: flex;
 	justify-content: center;
-	display: -webkit-box;
+	/*display: -webkit-box;
 	-webkit-box-pack: center;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: horizontal;*/
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-ms-flex-wrap: wrap;
 	&_list{
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+		display: -ms-flexbox;
+		-ms-flex-align: center;
+		-ms-flex-wrap: wrap;
 	}
 	&_logo{
 		display: inline-block;
 		margin: 0 140px;
 	}
 	&_listItem{
+		float: left;
 		margin-left: 20px;
 		list-style-type: none;
 	}
@@ -153,7 +161,17 @@ body{
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 		justify-content: center;
-		
+		//display:-webkit-flex;
+    	//display:-moz-flex;
+    	//display:-moz-box;
+    	display:-ms-flexbox; // for IE
+    	-ms-flex-direction: row-reverse;
+		-ms-flex-wrap: wrap;
+		-ms-flex-pack: center;
+    	//display:-webkit-box; // for Safari
+		//-webkit-box-pack: center;
+		//-webkit-box-orient: horizontal;
+		//-webkit-box-direction: reverse;
 		z-index: 3;
 	}
 	&_trialClass{
@@ -257,6 +275,10 @@ body{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		display: -ms-flexbox;
+		-ms-flex-direction: row;
+		-ms-flex-wrap: wrap;
+		-ms-flex-pack: center;
 	}
 }
 .yogaClass{
@@ -269,8 +291,11 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	float: left;
 	justify-content: center;
+	display: -ms-flexbox;
+	-ms-flex-direction: row;
+	-ms-flex-pack: center;
+	-ms-flex-wrap: wrap;
 	&_img{
 		background: $blue;
 		height: 300px;
@@ -303,10 +328,14 @@ body{
 	@extend %wideSectionCenter;
 	overflow: hidden;
 	clear: left;
+	padding-top: 150px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 150px;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-pack: center;
+	
 	&_imgBlock{
 		position: relative;
 		width: 480px;
@@ -363,6 +392,9 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-pack: center;
 	&_information{
 		margin-left: 20px;
 	}
@@ -418,7 +450,7 @@ body{
 }
 .features{
 	@extend %wideSectionCenter;
-			position: relative;
+		position: relative;
 		clear: left;
 		overflow: hidden;
 	&_backgroundImage{
@@ -447,6 +479,10 @@ body{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		display: -ms-flexbox;
+		-ms-flex-direction: row;
+		-ms-flex-wrap: wrap;
+		-ms-flex-pack: center;
 		z-index: 3;
 	}
 	&_feature{
@@ -490,9 +526,16 @@ body{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-wrap: wrap;
 	&_buyNow{
 		margin-top: 100px;
+		margin-right: 30px;
 		float: left;
+	}
+	&_buyNow:nth-child(3){
+		margin-right: 0;
 	}
 }
 .buyNow{
@@ -504,12 +547,18 @@ body{
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 	&_title{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		order: -2;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
+		-ms-flex-order: -2;
 		color: #fff;
 		font-size: 50px;
 		height: 150px;
@@ -533,13 +582,18 @@ body{
 	}
 	&_text{
 		text-transform: uppercase;
-		display: flex;
 		position: relative;
 		top: 50px;
+		display: flex;
 		order: -1;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		display: -ms-flexbox;
+		-ms-flex-order: -1;
+		-ms-flex-direction: row;
+		-ms-flex-wrap: wrap;
+		-ms-flex-pack: center;
 	}
 	 &_time, &_advicer{
 		margin-top: 50px;
@@ -555,6 +609,8 @@ body{
 		position: relative;
 		display: flex;
 		justify-content: center;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
 		top: 100px;
 		color: #fff;
 		font-size: 1.3em;
@@ -564,6 +620,9 @@ body{
 		text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
 	}
 	&_buttonLink:hover ~ &_title {
+		text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+	}
+	&_buttonLink:hover  &_title {
 		text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
 	}
 }
@@ -625,6 +684,9 @@ body{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		display: -ms-flexbox;
+		-ms-flex-direction: column;
+		-ms-flex-pack: end;
 	}
 	&_infoPosition{
 		color: $grey;
@@ -655,6 +717,9 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
 	}
 	&_previousBtn{
 		@extend %previousBtn;
@@ -674,6 +739,9 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
 	}
 	&_nextBtn{
 		@extend %nextBtn;
@@ -720,6 +788,9 @@ body{
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-wrap: wrap;
 	}
 	&_about{
 		display: block;
@@ -732,16 +803,22 @@ body{
 	}
 	&_copy{
 		@extend %wideSectionCenter;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		position: relative;
 		z-index: 1;
 		clear: left;
 		min-height: 100px;
+		height: 100px;
 		background: $darkBlue;
 		color: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		display: -ms-flexbox;
+		-ms-flex-direction: row;
+		-ms-flex-align: center;
+		-ms-flex-pack: center;
+		-ms-flex-wrap: wrap;
 	}
 }
 
