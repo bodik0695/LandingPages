@@ -144,6 +144,7 @@ body{
 		background: $blue;
 		border-radius: 10px;
 		z-index: 13;
+		cursor: pointer;
 	}
 	&_mobileMenuIcon{
 		display: block;
@@ -266,6 +267,7 @@ body{
 		@extend %formElementTemplate;
 		color: #888;
 		width: 230px;
+		cursor: pointer;
 	}
 	&-classBlack{
 		color: #000;
@@ -275,6 +277,7 @@ body{
 		margin-top: 30px;
 		margin-left: 95px;
 		opacity: 0.9;
+		cursor: pointer;
 	}
 	&_button:hover{
 		opacity: 1;
@@ -368,6 +371,7 @@ body{
 		width: 470px;
 		min-height: 350px;
 		background: $lightGrey;
+		cursor: pointer;
 	}
 	&_imgHoverBackground{
 		visibility: hidden;
@@ -427,10 +431,21 @@ body{
 		margin-top: 30px;
 		margin-right: 100px;
 	}
-	&_images{
+	&_slides{
 		display: inline-block;
 		position: relative;
 		top: 100px;
+	}
+	&_slideInner{
+		overflow: hidden;
+		max-width: 570px;
+	}
+	&_slidesBox{
+		width: 1720px;
+		max-height: 300px;
+	}
+	&_slide{
+		float: left;
 	}
 	&_previousBtnBackground{
 		position: absolute;
@@ -442,6 +457,8 @@ body{
 		background-color: #fff;
 		-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
 		box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
+		cursor: pointer;
+		z-index: 10;
 	}
 	&_previousBtn{
 		@extend %previousBtn;
@@ -459,6 +476,7 @@ body{
 		background-color: #fff;
 		-webkit-box-shadow: -5px 0px 5px rgba(0,0,0,0.1);
 		box-shadow: -5px 0px 5px rgba(0,0,0,0.1);
+		cursor: pointer;
 	}
 	&_nextBtn{
 		@extend %nextBtn;
@@ -701,8 +719,7 @@ body{
 .nextTrainer{
 	position: relative;
 	display: inline-block;
-	width: 180px;
-	
+	width: 200px;
 	&_previousBtnBackground{
 		position: absolute;
 		width: 30px;
@@ -714,6 +731,7 @@ body{
 		-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
 		box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
 		text-align: center;
+		cursor: pointer;
 	}
 	&_previousBtn{
 		@extend %previousBtn;
@@ -733,6 +751,7 @@ body{
 		background-color: #fff;
 		-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
 		box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
+		cursor: pointer;
 	}
 	&_nextBtn{
 		@extend %nextBtn;
@@ -744,13 +763,17 @@ body{
 		left: 9px;
 	}
 	&_icon{
+		display: inline-block;
 		border-radius: 50%;
 		-webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d0d4d5;
 		box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d0d4d5;
 		float: left;
 		margin-right: 15px;
+		margin-left: 10px;
+		margin-top: 7px;
 	}
 	&_name{
+		display: inline-block;
 		text-align: left;
 		color: #555;
 		padding-top: 15px;
@@ -760,6 +783,19 @@ body{
 		text-align: left;
 		color: $grey;
 		padding-top: 5px;
+	}
+	&_slideInner{
+		overflow: hidden;
+		max-width: 180px;
+	}
+	&_slidesBox{
+		min-width: 555px;
+		height: 90px;
+	}
+	&_slide{
+		display: inline-block;
+		width: 181px;
+		margin: 0;
 	}
 	
 }
@@ -870,14 +906,14 @@ body{
 }
 @media screen and(min-width:0px)and(max-width:768px){
 	.pageNav{
-		min-height: 40px;
+		min-height: 50px;
 		&_mobileMenu{
 			display: block;
-			zoom: 0.5;
+			zoom: 0.7;
 			top: 5px;
 		}
 		&_logo{
-			zoom: 0.5;
+			zoom: 0.7;
 			left: 50%;
 			margin-left: -35px;
 		}
@@ -978,14 +1014,22 @@ body{
 			margin-right: 10%;
 			margin-left: 10%;
 		}
-		&_images{
+		&_slides{
 			top: 50px;
 			zoom: 0.5;
+		}
+		&_previousBtnBackground{
+			zoom: 1.5;
+			top: 80px;
+		}
+		&_nextBtnBackground{
+			zoom: 1.5;
+			top: 80px;
 		}
 	}
 	.prices{
 		&_buyNow{
-			zoom: 0.7;
+			zoom: 0.5;
 		}
 	}
 	.bloquotes{
@@ -997,7 +1041,7 @@ body{
 		&_content{
 			text-align: left;
 			display: block;
-			margin-left: 40px;
+			margin-left: 45px;
 			margin-top: 20px;
 		}
 		&_text:after{
@@ -1066,7 +1110,7 @@ body{
 		&_information{
 			margin-top: 20px;
 		}
-		&_images{
+		&_slides{
 			top: 50px;
 		}
 	}

@@ -125,7 +125,8 @@ body {
     height: 60px;
     background: #5b6ceb;
     border-radius: 10px;
-    z-index: 13; }
+    z-index: 13;
+    cursor: pointer; }
   .pageNav_mobileMenuIcon {
     display: block;
     width: 70%;
@@ -221,13 +222,15 @@ body {
     padding-bottom: 15px; }
   .trialClass_class {
     color: #888;
-    width: 230px; }
+    width: 230px;
+    cursor: pointer; }
   .trialClass-classBlack {
     color: #000; }
   .trialClass_button {
     margin-top: 30px;
     margin-left: 95px;
-    opacity: 0.9; }
+    opacity: 0.9;
+    cursor: pointer; }
   .trialClass_button:hover {
     opacity: 1; }
   .trialClass_error-box {
@@ -303,7 +306,8 @@ body {
     position: relative;
     width: 470px;
     min-height: 350px;
-    background: #a0a0a0; }
+    background: #a0a0a0;
+    cursor: pointer; }
   .gallery_imgHoverBackground {
     visibility: hidden;
     position: absolute;
@@ -350,10 +354,18 @@ body {
   .aboutUs_text {
     margin-top: 30px;
     margin-right: 100px; }
-  .aboutUs_images {
+  .aboutUs_slides {
     display: inline-block;
     position: relative;
     top: 100px; }
+  .aboutUs_slideInner {
+    overflow: hidden;
+    max-width: 570px; }
+  .aboutUs_slidesBox {
+    width: 1720px;
+    max-height: 300px; }
+  .aboutUs_slide {
+    float: left; }
   .aboutUs_previousBtnBackground {
     position: absolute;
     width: 50px;
@@ -363,7 +375,9 @@ body {
     left: -25px;
     background-color: #fff;
     -webkit-box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1); }
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10; }
   .aboutUs_previousBtn {
     position: absolute;
     top: 18px;
@@ -377,7 +391,8 @@ body {
     border-radius: 50%;
     background-color: #fff;
     -webkit-box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1); }
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
   .aboutUs_nextBtn {
     position: absolute;
     top: 18px;
@@ -574,7 +589,7 @@ body {
 .nextTrainer {
   position: relative;
   display: inline-block;
-  width: 180px; }
+  width: 200px; }
   .nextTrainer_previousBtnBackground {
     position: absolute;
     width: 30px;
@@ -585,7 +600,8 @@ body {
     background-color: #fff;
     -webkit-box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
   .nextTrainer_previousBtn {
     width: 7px;
     height: 7px;
@@ -601,7 +617,8 @@ body {
     border-radius: 50%;
     background-color: #fff;
     -webkit-box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1); }
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
   .nextTrainer_nextBtn {
     margin-right: 5px;
     width: 7px;
@@ -610,12 +627,16 @@ body {
     top: 9px;
     left: 9px; }
   .nextTrainer_icon {
+    display: inline-block;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d0d4d5;
     box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d0d4d5;
     float: left;
-    margin-right: 15px; }
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 7px; }
   .nextTrainer_name {
+    display: inline-block;
     text-align: left;
     color: #555;
     padding-top: 15px;
@@ -624,6 +645,16 @@ body {
     text-align: left;
     color: #777;
     padding-top: 5px; }
+  .nextTrainer_slideInner {
+    overflow: hidden;
+    max-width: 180px; }
+  .nextTrainer_slidesBox {
+    min-width: 555px;
+    height: 90px; }
+  .nextTrainer_slide {
+    display: inline-block;
+    width: 181px;
+    margin: 0; }
 
 .pageFooter {
   position: relative;
@@ -718,13 +749,13 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .pageNav {
-    min-height: 40px; }
+    min-height: 50px; }
     .pageNav_mobileMenu {
       display: block;
-      zoom: 0.5;
+      zoom: 0.7;
       top: 5px; }
     .pageNav_logo {
-      zoom: 0.5;
+      zoom: 0.7;
       left: 50%;
       margin-left: -35px; }
     .pageNav_listItem {
@@ -794,11 +825,17 @@ body {
       padding-top: 40px;
       margin-right: 10%;
       margin-left: 10%; }
-    .aboutUs_images {
+    .aboutUs_slides {
       top: 50px;
       zoom: 0.5; }
+    .aboutUs_previousBtnBackground {
+      zoom: 1.5;
+      top: 80px; }
+    .aboutUs_nextBtnBackground {
+      zoom: 1.5;
+      top: 80px; }
   .prices_buyNow {
-    zoom: 0.7; }
+    zoom: 0.5; }
   .bloquotes {
     text-align: center; }
     .bloquotes_photoIcon {
@@ -807,7 +844,7 @@ body {
     .bloquotes_content {
       text-align: left;
       display: block;
-      margin-left: 40px;
+      margin-left: 45px;
       margin-top: 20px; }
     .bloquotes_text:after {
       top: 90px; }
@@ -846,7 +883,7 @@ body {
     padding-bottom: 100px; }
     .aboutUs_information {
       margin-top: 20px; }
-    .aboutUs_images {
+    .aboutUs_slides {
       top: 50px; }
   .prices_buyNow {
     zoom: 0.6; }
