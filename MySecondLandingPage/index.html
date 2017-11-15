@@ -3,145 +3,164 @@
 	<head>
 		<title>Main</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="css/styleForSecondLandingPage.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=yes">
+		<link rel="stylesheet" href="css/sass/styleForSecondLandingPage.css" />
+		<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="jquery/jqueryForSecondProject.js"></script>
 	</head>
 	<body>
-		<div class="landingPage">
-			<p class="landingPage_logo">
-				<img class="logo" src="images/LandingPage/Logo.png" alt="" />
-			</p>
+		<header class="landingPage">
+			<a href="">
+				<p class="landingPage_logo">
+					<img class="logo" src="images/LandingPage/Logo.png" alt="" />
+				</p>
+			</a>
 			<p class="landingPage_welcome">welcome to the yellow side of moon</p>
-			<p class="landingPage_header">we do some creative stuff!!!</p>
+			<p class="landingPage_title">we do some creative stuff!!!</p>
 			<p class="landingPage_btn">
-				<button class="mediumBtn">explore</button>
+				<a class="mediumBtn">explore</a>
 			</p>
 			<p class="landingPage_arrow">
 				<a href="">
 					<img src="images/LandingPage/WhiteArrow.png" alt="" />
 				</a>
 			</p>
-		</div>
-		<nav class="navBar">
-			<p class="navBar_center">
-				<a class="logoYellowMoon navBar_logoYellowMoon" href="">
+		</header>
+		<main>
+			<nav class="navBar">
+				<div class="navBar_mobileMenu">
+					<span class="navBar_mobileMenuIcon"></span>
+				</div>
+				<a class="navBar_logoYellowMoon" href="">
 					<img  src="images/NavBar/LogoYellowMoon.png" alt="" />
 				</a>
-				<ul class="menu navBar_menu">
-					<li><a href="">home</a></li>
-					<li><a href="">about us</a></li>
-					<li><a href="">portfolio</a></li>
-					<li><a href="">clients</a></li>
-					<li><a href="">contact</a></li>
+				<ul class="pageMenu navBar_pageMenu">
+					<li class="pageMenu_listItem">
+						<a class="pageMenu_link" href="">home</a>
+					</li>
+					<li class="pageMenu_listItem">
+						<a class="pageMenu_link" href="">about us</a>
+					</li>
+					<li class="pageMenu_listItem">
+						<a class="pageMenu_link" href="">portfolio</a>
+					</li>
+					<li class="pageMenu_listItem">
+						<a class="pageMenu_link" href="">clients</a>
+					</li>
+					<li class="pageMenu_listItem">
+						<a class="pageMenu_link" href="">contact</a>
+					</li>
 				</ul>
-			</p>
-		</nav>
-		<div class="aboutUs">
-			<p class="aboutUs_header">about us</p>
-			<p class="aboutUs_headerComment">yellow side of the moon is not secret anymore</p>
-			<ol class="aboutUs_content">
-				<li>
-					<p class="aboutUs_content_text">we make some art</p>
-					<p class="aboutUs_content_comment">Its just some empty spaces with some<br />
-					text, images and more empty spaces</p>
-				</li>
-				<li>
-					<p class="aboutUs_content_text">we devlope some apps</p>
-					<p class="aboutUs_content_comment">You click and magic happen,<br />
-					well someone must make magic</p>
-				</li>
-				<li>
-					<p class="aboutUs_content_text">we take some photographs</p>
-					<p class="aboutUs_content_comment">This is the easy part of job,<br />
-					just point camera and shoot</p>
-				</li>
-			</ol>
-		</div>
-		<div class="quote">
-			<p class="quote_header">this is some random text<br />
-			where you get inspired and do some cool stuff </p>
-			<p class="quote_headerComment
-">no... we are not lazy, every website need blank space</p>
-		</div>
-		<div class="portfolio">
-			<div class="portfolio_header">portfolio</div>
-			<div class="portfolio_headerComment">when we are bored we make some of these</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image -yellow">
-				<p class="portfolio_image_wornning">worning!!!</p>
-				<p class="portfolio_image_shocking">shocking good art</p>
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<div class="portfolio_image">
-				<img src="" alt="" />
-			</div>
-			<p class="portfolio_moreText">oh... we have more of these</p>
-			<p class="portfolio_arrow">
-				<a href="">
-				<img src="images/Portfolio/BlackArrow.png" alt="" />
-				</a>
-			</p>
-			
-		</div>
-		<div class="clients">
-			<div class="clients_content">
-				<p class="clients_content_header">clients</p>
-				<p class="clients_content_headerComment">somebody actually pay us for these stuff</p>
-				<img class="clients_content_logo -position" src="images/Clients/Chippis.png" alt="" />
-				<img class="clients_content_logo -position" src="images/Clients/Sweety.png" alt="" />
-				<img class="clients_content_logo -position" src="images/Clients/Bullseye.png" alt="" />
-				<img class="clients_content_logo -position" src="images/Clients/WallPaintShop.png" alt="" />
-				<img class="clients_content_logo -position" src="images/Clients/GoldeGolde.png" alt="" />
-				<img class="clients_content_logo -position" src="images/Clients/LilisFlowers.png" alt="" />
-			</div>
-		</div>
-		<div class="contactUs">
-			<p class="contactUs_header">contact us</p>
-			<p class="contactUs_headerComment">sure...we can tae some time for chat</p>
-			<form class="form contactUs_form">
-				<input class="form_name" type="text" value="Name" />
-				<input class="form_email" type="email" value="email" />
-				<input class="form_subject" type="text" value="Subject" />
-				<textarea class="form_message">Message</textarea>
-				<input class="bigBtn form_btn"  type="submit" value="send">
-			</form>
-		</div>
-		<footer class="footer">
-			<div class="footer_section">
-				<p  class="footer_section_copy">&copy; 2016 - YellowMoon All Right Reserved</p>
-				<p class="footer_section_ref">
-					<a class="smallRef" href="">
-					<img src="images/Footer/Facebook.png" alt="" />
-					</a>
-					<a class="smallRef" href="">
-						<img src="images/Footer/Twiter.png" alt="" />
-					</a>
-					<a class="smallRef" href="">
-						<img src="images/Footer/Dribble.png" alt="" />
-					</a>
-					<a class="smallRef" href="">
-						<img src="images/Footer/Google.png" alt="" />
-					</a>
-					<a class="smallRef" href="">
-						<img src="images/Footer/YouTube.png" alt="" />
+			</nav>
+			<section class="aboutUs">
+				<p class="aboutUs_header">about us</p>
+				<p class="aboutUs_headerComment">yellow side of the moon is not secret anymore</p>
+				<ol class="aboutUs_content">
+					<li class="aboutUs_listItem">
+						<p class="aboutUs_contentText">we make some art</p>
+						<p class="aboutUs_contentComment">Its just some empty spaces with some<br />
+						text, images and more empty spaces</p>
+					</li>
+					<li class="aboutUs_listItem">
+						<p class="aboutUs_contentText">we devlope some apps</p>
+						<p class="aboutUs_contentComment">You click and magic happen,<br />
+						well someone must make magic</p>
+					</li>
+					<li class="aboutUs_listItem">
+						<p class="aboutUs_contentText">we take some photographs</p>
+						<p class="aboutUs_contentComment">This is the easy part of job,<br />
+						just point camera and shoot</p>
+					</li>
+				</ol>
+			</section>
+			<section class="quote">
+				<p class="quote_header">this is some random text<br />
+				where you get inspired and do some cool stuff </p>
+				<p class="quote_headerComment">no... we are not lazy, every website need blank space</p>
+			</section>
+			<section class="portfolio">
+				<div class="portfolio_header">portfolio</div>
+				<div class="portfolio_headerComment">when we are bored we make some of these</div>
+				<div class="portfolio_content">
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image -yellow">
+						<p class="portfolio_imageWornning">worning!!!</p>
+						<p class="portfolio_imageShocking">shocking good art</p>
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+					<div class="portfolio_image">
+						<img src="" alt="" />
+					</div>
+				</div>
+				<p class="portfolio_moreText">oh... we have more of these</p>
+				<p class="portfolio_arrow">
+					<a href="">
+					<img src="images/Portfolio/BlackArrow.png" alt="" />
 					</a>
 				</p>
+				
+			</section>
+			<section class="clients">
+				<p class="clients_contentHeader">clients</p>
+				<p class="clients_contentHeaderComment">somebody actually pay us for these stuff</p>
+				<div class="clients_content">
+					<img class="clients_client -position" src="images/Clients/Chippis.png" alt="" />
+					<img class="clients_client -position" src="images/Clients/Sweety.png" alt="" />
+					<img class="clients_client -position" src="images/Clients/Bullseye.png" alt="" />
+					<img class="clients_client -position" src="images/Clients/WallPaintShop.png" alt="" />
+					<img class="clients_client -position" src="images/Clients/GoldeGolde.png" alt="" />
+					<img class="clients_client -position" src="images/Clients/LilisFlowers.png" alt="" />
+				</div>
+			</section>
+			<section class="contactUs">
+				<p class="contactUs_header">contact us</p>
+				<p class="contactUs_headerComment">sure...we can tae some time for chat</p>
+				<form class="form contactUs_form">
+					<input class="form_name" type="text" placeholder="Name" />
+					<input class="form_email" type="email" placeholder="email" />
+					<input class="form_subject" type="text" placeholder="Subject" />
+					<textarea class="form_message" placeholder="Message" ></textarea>
+					<input class="bigBtn form_btn"  type="submit" value="send">
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer_content">
+				<p  class="footer_copy">&copy; 2016 - YellowMoon All Right Reserved</p>
+				<div class="footer_refs">
+					<a class="footer_ref" href="">
+					<img src="images/Footer/Facebook.png" alt="" />
+					</a>
+					<a class="footer_ref" href="">
+						<img src="images/Footer/Twiter.png" alt="" />
+					</a>
+					<a class="footer_ref" href="">
+						<img src="images/Footer/Dribble.png" alt="" />
+					</a>
+					<a class="footer_ref" href="">
+						<img src="images/Footer/Google.png" alt="" />
+					</a>
+					<a class="footer_ref" href="">
+						<img src="images/Footer/YouTube.png" alt="" />
+					</a>
+				</div>
 			</div>
 		</footer>
 	</body>

@@ -1,0 +1,572 @@
+.aboutUs_header, .portfolio_header, .clients_contentHeader, .contactUs_header, .aboutUs_headerComment, .portfolio_headerComment, .clients_contentHeaderComment, .contactUs_headerComment, .landingPage_welcome, .landingPage_title, .mediumBtn, .pageMenu, .quote_header, .quote_headerComment, .portfolio_imageWornning, .portfolio_imageShocking, .portfolio_moreText, .bigBtn {
+  text-transform: uppercase;
+  text-align: center; }
+
+.aboutUs_header, .portfolio_header, .clients_contentHeader, .contactUs_header {
+  font-size: 1.5em;
+  margin-top: 100px; }
+
+.aboutUs_headerComment, .portfolio_headerComment, .clients_contentHeaderComment, .contactUs_headerComment {
+  color: #ffeb33;
+  margin-top: 30px;
+  margin-bottom: 100px; }
+
+.form_name, .form_email, .form_subject, .form_message {
+  height: 50px;
+  color: #000;
+  background: #ffeb33;
+  border: none;
+  padding-left: 20px; }
+
+.footer_content {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+.landingPage {
+  background: #89898b;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .landingPage_logo {
+    text-align: center;
+    padding-top: 300px; }
+  .landingPage_welcome {
+    color: #fff;
+    margin-top: 50px; }
+  .landingPage_title {
+    font-size: 3em;
+    color: #ffeb33;
+    margin-top: 50px; }
+  .landingPage_btn {
+    text-align: center;
+    margin-top: 110px;
+    cursor: pointer; }
+  .landingPage_arrow {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 260px; }
+
+.mediumBtn {
+  width: 230px;
+  height: 60px;
+  color: #fff;
+  padding: 22px 90px;
+  border: 1px solid #ffeb33;
+  background: none;
+  cursor: pointer; }
+
+.logo {
+  display: inline-block;
+  width: 90px;
+  height: 90px; }
+
+.navBar {
+  border-bottom: 1px solid #ffeb33;
+  min-height: 120px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .navBar_logoYellowMoon {
+    display: inline-block;
+    position: absolute;
+    width: 190px;
+    min-height: 50px;
+    margin-top: 35px;
+    float: left;
+    left: 10%; }
+  .navBar_pageMenu {
+    position: absolute;
+    margin-top: 50px;
+    right: 5%; }
+  .navBar_mobileMenu {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 25px;
+    width: 60px;
+    min-height: 60px;
+    background: #ffeb33;
+    border-radius: 10px;
+    z-index: 13;
+    cursor: pointer; }
+  .navBar_mobileMenuIcon {
+    display: block;
+    width: 70%;
+    height: 5px;
+    background: #fff;
+    margin-top: 27px;
+    margin-left: 15%; }
+  .navBar_mobileMenuIcon:before, .navBar_mobileMenuIcon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #fff; }
+  .navBar_mobileMenuIcon:before {
+    -ms-transform: translate(0, -12px);
+    transform: translate(0, -12px);
+    -webkit-transform: translate(0, -12px); }
+  .navBar_mobileMenuIcon:after {
+    -ms-transform: translate(0, 7px);
+    transform: translate(0, 7px);
+    -webkit-transform: translate(0, 7px); }
+
+.pageMenu {
+  float: left;
+  display: inline;
+  list-style-type: none; }
+  .pageMenu_listItem {
+    display: inline;
+    margin-right: 15px; }
+  .pageMenu_link {
+    color: #a5a5a5;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none; }
+  .pageMenu_listItem:first-child .pageMenu_link {
+    color: #000;
+    border: 1px solid;
+    border-color: #ffeb33; }
+  .pageMenu_link:hover {
+    color: #000;
+    border-color: #ffeb33; }
+
+.aboutUs {
+  min-height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px; }
+  .aboutUs_listItem {
+    margin-right: 100px;
+    margin-left: 10px;
+    min-width: 280px; }
+  .aboutUs_content {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #ffeb33;
+    list-style: decimal-leading-zero; }
+  .aboutUs_contentText {
+    color: #000;
+    padding-left: 10px;
+    border-left: 1px solid #ffeb33;
+    text-transform: uppercase;
+    margin-top: 40px; }
+  .aboutUs_contentComment {
+    color: #a5a5a5;
+    margin-top: 50px;
+    text-align: center; }
+
+.quote {
+  background: #ffeb33; }
+  .quote_header, .quote_headerComment {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .quote_header {
+    font-size: 1.5em;
+    padding-top: 250px; }
+  .quote_headerComment {
+    color: #fff;
+    margin-top: 30px;
+    padding-bottom: 250px; }
+
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .portfolio_content {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .portfolio_image {
+    cursor: pointer;
+    width: 270px;
+    min-height: 200px;
+    background: #eae6e6;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-top: 15px; }
+  .portfolio_imageWornning {
+    margin-top: 80px; }
+  .portfolio_imageShocking {
+    color: #fff; }
+  .portfolio_moreText {
+    color: #ffeb33; }
+  .portfolio_arrow {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 200px; }
+  .portfolio_image.-yellow {
+    background: #ffeb33; }
+
+.clients {
+  background: #424245;
+  min-height: 500px; }
+  .clients_content {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .clients_contentHeader {
+    padding-top: 100px;
+    color: #fff; }
+  .clients_client {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 60px;
+    cursor: pointer;
+    margin-top: 15px;
+    cursor: pointer; }
+  .clients_client.-position {
+    margin-right: 90px; }
+
+.contactUs {
+  margin-bottom: 30px; }
+  .contactUs_form {
+    margin-left: 120px;
+    margin-bottom: 100px; }
+
+.form {
+  margin: 0 auto;
+  max-width: 972px;
+  min-height: 390px; }
+  .form_name {
+    max-width: 450px;
+    width: 450px;
+    margin-right: 26px; }
+  .form_email {
+    max-width: 450px;
+    width: 450px;
+    max-height: 50px; }
+  .form_subject {
+    max-width: 950px;
+    width: 100%;
+    margin-top: 20px; }
+  .form_message {
+    max-width: 950px;
+    width: 100%;
+    min-height: 180px;
+    margin-top: 20px;
+    padding-top: 20px; }
+  .form_btn {
+    margin-top: 20px; }
+
+.bigBtn {
+  max-width: 970px;
+  width: 100%;
+  min-height: 50px;
+  background: #000;
+  color: #ffeb33;
+  border: none;
+  cursor: pointer; }
+
+.footer {
+  text-align: center;
+  width: 100%;
+  min-height: 100px;
+  background: #000;
+  color: #ffeb33; }
+  .footer_copy {
+    padding-top: 45px;
+    float: left;
+    margin-left: 10px; }
+  .footer_refs {
+    margin-left: 70%; }
+  .footer_ref {
+    padding-top: 45px;
+    float: left;
+    margin-left: 20px; }
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .navBar_logoYellowMoon {
+    left: 3%; }
+  .pageMenu {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    right: 0; }
+    .pageMenu_listItem {
+      margin-right: 5px; }
+  .aboutUs_listItem {
+    margin-right: 20px;
+    margin-left: 30px; }
+  .clients_content {
+    margin-left: 10px; }
+  .form {
+    max-width: 768px; }
+    .form_name {
+      position: relative;
+      max-width: 768px;
+      width: 95%;
+      right: 10px;
+      left: 10px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000; }
+    .form_email {
+      max-width: 768px;
+      width: 95%;
+      max-height: 50px;
+      position: relative;
+      right: 10px;
+      left: 10px;
+      border-bottom: 1px solid #000; }
+    .form_subject {
+      position: relative;
+      max-width: 768px;
+      width: 95%;
+      right: 10px;
+      left: 10px;
+      margin-top: 0;
+      border-bottom: 1px solid #000; }
+    .form_message {
+      position: relative;
+      max-width: 768px;
+      width: 95%;
+      right: 10px;
+      left: 10px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border: 1px solid #000; }
+    .form_btn {
+      margin-left: 10px;
+      width: 98%; } }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .landingPage_logo {
+    padding-top: 100px; }
+  .landingPage_title {
+    font-size: 2em; }
+  .landingPage_arrow {
+    padding-bottom: 100px; }
+  .navBar {
+    position: relative; }
+    .navBar_logoYellowMoon {
+      position: absolute;
+      margin-top: 35px;
+      left: 50%;
+      margin-left: -90px; }
+    .navBar_pageMenu {
+      margin: 0;
+      padding: 0;
+      min-width: 319px;
+      position: absolute;
+      top: 120px; }
+    .navBar_mobileMenu {
+      display: block;
+      zoom: 0.9;
+      top: 40px; }
+  .pageMenu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    left: 0; }
+    .pageMenu_listItem {
+      margin: 0;
+      display: none; }
+    .pageMenu_link {
+      display: inline-block;
+      color: #000;
+      padding: 10px;
+      border: 1px solid #ffeb33;
+      width: 90%;
+      left: 0;
+      margin-bottom: -1px; }
+  .aboutUs_listItem {
+    margin-right: 20px;
+    margin-left: 30px; }
+  .portfolio_image {
+    margin-right: 5px;
+    margin-left: 10px; }
+  .portfolio_arrow {
+    margin-bottom: 20px; }
+  .clients_contentHeader {
+    padding-top: 20px; }
+  .clients_client {
+    margin-top: 10px; }
+  .clients_client.-position {
+    margin-right: 30px; }
+  .form {
+    max-width: 767px; }
+    .form_name {
+      position: relative;
+      max-width: 767px;
+      width: 90%;
+      right: 10px;
+      left: 10px;
+      border-top: 1px solid #000;
+      border-bottom: 2px solid #000;
+      margin-top: -1px;
+      margin-bottom: -1px; }
+    .form_email {
+      max-width: 767px;
+      width: 90%;
+      max-height: 50px;
+      position: relative;
+      right: 10px;
+      left: 10px;
+      border-bottom: 2px solid #000;
+      margin-bottom: -1px; }
+    .form_subject {
+      position: relative;
+      width: 90%;
+      right: 10px;
+      left: 10px;
+      margin-top: 0;
+      border-bottom: 1px solid #000;
+      margin-bottom: -1px; }
+    .form_message {
+      position: relative;
+      width: 90%;
+      right: 10px;
+      left: 10px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border: 1px solid #000;
+      margin-bottom: -1px; }
+    .form_btn {
+      width: 100%; }
+  .footer {
+    min-height: 10px; }
+    .footer_content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+    .footer_copy {
+      padding-top: 15px; }
+    .footer_refs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin: 0 auto; }
+    .footer_ref {
+      padding-top: 15px; } }
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+  body {
+    overflow-x: scroll;
+    min-width: 320px; }
+  .navBar_logoYellowMoon {
+    left: 30%; } }
