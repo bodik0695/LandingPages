@@ -25,6 +25,14 @@ $(document).ready(function(){
 		}
 	}); //end mobMenu.click
 
+	$(document).mouseup(function (e){
+		var displayMobMenu = mobMenu.css('display');
+			if (!mobMenu.is(e.target) 
+			    && mobMenu.has(e.target).length === 0 
+			    && displayMobMenu === "block") { 
+				hideMenu();
+			}
+	});
 	setInterval(function(){
 		var displayMobMenu = mobMenu.css('display');
 		if(displayMobMenu !== "block"){
