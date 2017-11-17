@@ -10,7 +10,7 @@
   margin-top: 15px; }
 
 .trialClass_button, .buyNow_button {
-  height: 50px;
+  min-height: 50px;
   width: 170px;
   border-radius: 10px;
   background: #5b6ceb;
@@ -79,19 +79,18 @@ body {
   min-height: 80px;
   background: #fff;
   top: 0;
-  text-align: center;
-  display: table; }
+  display: inline-block;
+  text-align: center; }
   .pageNav_logo {
     position: absolute;
     display: inline-block;
-    padding: 0;
+    top: 3px;
     left: 50%;
     z-index: 2; }
   .pageNav_list {
-    display: table-cell;
-    vertical-align: middle;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    top: 30px; }
   .pageNav_listItem {
     position: relative;
     display: inline-block;
@@ -122,7 +121,7 @@ body {
     right: 5%;
     top: 10px;
     width: 60px;
-    height: 60px;
+    min-height: 60px;
     background: #5b6ceb;
     border-radius: 10px;
     z-index: 13;
@@ -181,9 +180,9 @@ body {
     display: inline-block;
     margin-top: 170px;
     margin-left: 100px;
-    float: right; }
+    float: right;
+    max-width: 350px; }
   .slider_title {
-    margin-top: 0;
     text-transform: uppercase;
     font-size: 2em;
     font-weight: bold;
@@ -264,11 +263,13 @@ body {
     margin-top: 45px;
     display: inline-block; }
   .ourClases_yogaClass {
+    display: inline-block;
+    vertical-align: top;
     margin-top: 25px;
     margin-right: 25px; }
 
 .yogaClass {
-  min-height: 300px;
+  min-height: 290px;
   min-width: 270px;
   color: #777;
   border-radius: 5px;
@@ -276,13 +277,14 @@ body {
   display: inline-block; }
   .yogaClass_img {
     background: #5b6ceb;
-    min-height: 300px;
+    height: 300px;
     width: 270px;
     float: left; }
   .yogaClass_content {
     float: right;
     min-height: inherit;
-    width: 270px; }
+    width: 270px;
+    margin-left: 15px; }
   .yogaClass_title {
     font-weight: bold;
     font-size: 1.2em;
@@ -323,7 +325,7 @@ body {
     top: 150px;
     background: #fff;
     width: 58px;
-    height: 58px;
+    min-height: 58px;
     border-radius: 50%;
     -webkit-box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1); }
@@ -353,11 +355,13 @@ body {
     color: #5b6ceb; }
   .aboutUs_text {
     margin-top: 30px;
-    margin-right: 100px; }
+    margin-right: 100px;
+    max-width: 450px; }
   .aboutUs_slides {
     display: inline-block;
+    vertical-align: top;
     position: relative;
-    top: 100px; }
+    top: 150px; }
   .aboutUs_slideInner {
     overflow: hidden;
     max-width: 570px; }
@@ -369,7 +373,7 @@ body {
   .aboutUs_previousBtnBackground {
     position: absolute;
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     border-radius: 50%;
     top: 125px;
     left: -25px;
@@ -385,7 +389,7 @@ body {
   .aboutUs_nextBtnBackground {
     position: absolute;
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     top: 125px;
     right: -25px;
     border-radius: 50%;
@@ -417,6 +421,7 @@ body {
     z-index: 3; }
   .features_feature {
     display: inline-block;
+    vertical-align: top;
     margin-right: 25px;
     margin-top: 30px; }
 
@@ -452,7 +457,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em;
-    margin-top: 30px; }
+    margin-top: 30px;
+    min-height: 54px; }
   .feature_text {
     margin-top: 20px; }
 
@@ -467,7 +473,7 @@ body {
 
 .buyNow {
   width: 360px;
-  height: 500px;
+  min-height: 500px;
   background: #fff;
   text-align: center;
   border-radius: 10px;
@@ -479,13 +485,13 @@ body {
   .buyNow_title {
     display: table;
     width: 100%;
-    margin-top: -60px; }
+    margin-top: -65px;
+    height: 150px; }
   .buyNow_titleText {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
     font-size: 50px;
-    height: 150px;
     width: 100%;
     background: #5b6ceb;
     font-weight: bold; }
@@ -511,7 +517,7 @@ body {
     display: inline-block;
     position: relative;
     padding-top: 15px;
-    height: 40px;
+    min-height: 40px;
     border-radius: 20px;
     font-weight: normal;
     top: 300px;
@@ -567,7 +573,7 @@ body {
     z-index: 10; }
   .bloquotes_info {
     display: inline-block;
-    height: 70px;
+    min-height: 70px;
     width: 200px;
     border-left: 2px solid #a0a0a0;
     padding-left: 40px;
@@ -589,11 +595,12 @@ body {
 .nextTrainer {
   position: relative;
   display: inline-block;
-  width: 200px; }
+  width: 250px;
+  height: 70px; }
   .nextTrainer_previousBtnBackground {
     position: absolute;
     width: 30px;
-    height: 30px;
+    min-height: 30px;
     border-radius: 50%;
     top: 20px;
     left: -60px;
@@ -650,10 +657,10 @@ body {
     max-width: 180px; }
   .nextTrainer_slidesBox {
     min-width: 555px;
-    height: 90px; }
+    min-height: 90px; }
   .nextTrainer_slide {
     display: inline-block;
-    width: 181px;
+    width: 191px;
     margin: 0; }
 
 .pageFooter {
@@ -678,7 +685,6 @@ body {
     position: relative;
     z-index: 1;
     min-height: 100px;
-    height: 100px;
     background: #5363d8;
     color: #fff;
     text-align: center;
@@ -753,17 +759,23 @@ body {
     .pageNav_mobileMenu {
       display: block;
       zoom: 0.7;
+      -moz-transform: scale(0.7);
+      -moz-transform-origin: top center;
       top: 5px; }
     .pageNav_logo {
-      zoom: 0.7;
+      zoom: 0.6;
+      -moz-transform: scale(0.6);
+      -moz-transform-origin: top center;
       left: 50%;
-      margin-left: -35px; }
+      margin-left: -35px;
+      margin-top: 3px; }
+    .pageNav_list {
+      top: 60px; }
     .pageNav_listItem {
       border-bottom: 1px solid #000;
       margin-top: -1px;
       display: block;
       min-height: 20px;
-      top: 60px;
       margin: 0;
       background: #fff;
       display: none; }
@@ -787,13 +799,16 @@ body {
       background: none; }
   .slider_content {
     zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: center;
     margin-top: 0; }
   .slider_text {
     display: block;
     float: none;
     margin-left: 0; }
   .slider_form {
-    display: block; }
+    display: block;
+    margin-left: 25px; }
   .ourClases_yogaClass {
     margin-right: 0px; }
   .yogaClass {
@@ -801,10 +816,12 @@ body {
     .yogaClass_img {
       float: none; }
     .yogaClass_content {
-      float: none; }
+      float: none;
+      margin-left: 0; }
     .yogaClass_title {
       margin-top: 20px; }
   .gallery_imgBlock {
+    display: inline-block;
     zoom: 0.7; }
   .gallery_imgBlock:hover .gallery_icon {
     -webkit-filter: none;
@@ -827,12 +844,18 @@ body {
       margin-left: 10%; }
     .aboutUs_slides {
       top: 50px;
-      zoom: 0.5; }
+      zoom: 0.5;
+      -moz-transform: scale(0.5);
+      -moz-transform-origin: center;
+      margin-top: -70px;
+      margin-bottom: -70px; }
     .aboutUs_previousBtnBackground {
       zoom: 1.5;
+      -moz-transform: scale(1.5);
       top: 80px; }
     .aboutUs_nextBtnBackground {
       zoom: 1.5;
+      -moz-transform: scale(1.5);
       top: 80px; }
   .prices_buyNow {
     zoom: 0.5; }
@@ -855,11 +878,13 @@ body {
   .nextTrainer_previousBtnBackground {
     top: 5px;
     left: -40px;
-    zoom: 1.5; }
+    zoom: 1.5;
+    -moz-transform: scale(1.5); }
   .nextTrainer_nextBtnBackground {
     top: 5px;
     right: -40px;
-    zoom: 1.5; }
+    zoom: 1.5;
+    -moz-transform: scale(1.5); }
   .pageFooter_about {
     float: none; }
   .pageFooterAbout_title, .pageFooterAbout_icons {
@@ -887,7 +912,7 @@ body {
       top: 50px; }
   .prices_buyNow {
     zoom: 0.6; }
-  .pageFooter_about {
+  .prices .pageFooter_about {
     float: none; }
-  .pageFooterAbout_title, .pageFooterAbout_icons {
+  .prices .pageFooterAbout_title, .prices .pageFooterAbout_icons {
     text-align: center; } }

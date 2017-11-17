@@ -14,7 +14,7 @@ $lightGrey: #a0a0a0;
 	margin-top: 15px;
 }
 %buttonTemplate{ 
-	height: 50px;
+	min-height: 50px;
 	width: 170px;
 	border-radius: 10px;
 	background: $blue;
@@ -88,20 +88,19 @@ body{
 	min-height: 80px;
 	background: #fff;
 	top: 0;
+	display: inline-block;
 	text-align: center;
-	display: table;
 	&_logo{
 		position: absolute;
 		display: inline-block;
-		padding: 0;
+		top: 3px;
 		left: 50%;
 		z-index: 2;
 	}
 	&_list{
-		display: table-cell;
-		vertical-align: middle;
 		position: relative;
 		z-index: 1;
+		top: 30px;
 	}
 	&_listItem{
 		position: relative;
@@ -140,7 +139,7 @@ body{
 		right: 5%;
 		top: 10px;
 		width: 60px;
-		height: 60px;
+		min-height: 60px;
 		background: $blue;
 		border-radius: 10px;
 		z-index: 13;
@@ -213,9 +212,9 @@ body{
 		margin-top: 170px;
 		margin-left: 100px;
 		float: right;
+		max-width: 350px;
 	}
 	&_title{
-		margin-top: 0;
 		text-transform: uppercase;
 		font-size: 2em;
 		font-weight: bold;
@@ -319,12 +318,14 @@ body{
 		display: inline-block;
 	}
 	&_yogaClass{
+		display: inline-block;
+		vertical-align: top;
 		margin-top: 25px;
 		margin-right: 25px;
 	}
 }
 .yogaClass{
-	min-height: 300px;
+	min-height: 290px;
 	min-width: 270px;
 	color: $grey;
 	border-radius: 5px;
@@ -332,7 +333,7 @@ body{
 	display: inline-block;
 	&_img{
 		background: $blue;
-		min-height: 300px;
+		height: 300px;
 		width: 270px;
 		float: left;
 	}
@@ -340,6 +341,7 @@ body{
 		float: right;
 		min-height: inherit;
 		width: 270px;
+		margin-left: 15px;
 	}
 	&_title{
 		@extend %arial;
@@ -389,7 +391,7 @@ body{
 		top: 150px;
 		background: #fff;
 		width: 58px;
-		height: 58px;
+		min-height: 58px;
 		border-radius: 50%;
 		-webkit-box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
 		box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
@@ -430,11 +432,13 @@ body{
 	&_text{
 		margin-top: 30px;
 		margin-right: 100px;
+		max-width: 450px;
 	}
 	&_slides{
 		display: inline-block;
+		vertical-align: top;
 		position: relative;
-		top: 100px;
+		top: 150px;
 	}
 	&_slideInner{
 		overflow: hidden;
@@ -450,7 +454,7 @@ body{
 	&_previousBtnBackground{
 		position: absolute;
 		width: 50px;
-		height: 50px;
+		min-height: 50px;
 		border-radius: 50%;
 		top: 125px;
 		left: -25px;
@@ -469,7 +473,7 @@ body{
 	&_nextBtnBackground{
 		position: absolute;
 		width: 50px;
-		height: 50px;
+		min-height: 50px;
 		top: 125px;
 		right: -25px;
 		border-radius: 50%;
@@ -508,6 +512,7 @@ body{
 	}
 	&_feature{
 		display: inline-block;
+		vertical-align: top;
 		margin-right: 25px;
 		margin-top: 30px;
 	}
@@ -548,6 +553,7 @@ body{
 		font-weight: bold;
 		font-size: 1.3em;
 		margin-top: 30px;
+		min-height: 54px;
 	}
 	&_text{
 		margin-top: 20px;
@@ -567,7 +573,7 @@ body{
 }
 .buyNow{
 	width: 360px;
-	height: 500px;
+	min-height: 500px;
 	background: #fff;
 	text-align: center;
 	border-radius: 10px;
@@ -579,14 +585,15 @@ body{
 	&_title{
 		display: table;
 		width: 100%;
-		margin-top: -60px;
+		margin-top: -65px;
+		height: 150px;
 	}
 	&_titleText{
 		display: table-cell;
 		vertical-align: middle;
 		color: #fff;
 		font-size: 50px;
-		height: 150px;
+		
 		width: 100%;
 		background: $blue;
 		@extend %arial;
@@ -621,7 +628,7 @@ body{
 		@extend %buttonTemplate;
 		position: relative;
 		padding-top: 15px;
-		height: 40px;
+		min-height: 40px;
 		border-radius: 20px;
 		font-weight: normal;
 		top: 300px;
@@ -691,7 +698,7 @@ body{
 	}
 	&_info{
 		display: inline-block;
-		height: 70px;
+		min-height: 70px;
 		width: 200px;
 		border-left: 2px solid $lightGrey;
 		padding-left: 40px;
@@ -719,11 +726,12 @@ body{
 .nextTrainer{
 	position: relative;
 	display: inline-block;
-	width: 200px;
+	width: 250px;
+	height: 70px;
 	&_previousBtnBackground{
 		position: absolute;
 		width: 30px;
-		height: 30px;
+		min-height: 30px;
 		border-radius: 50%;
 		top: 20px;
 		left: -60px;
@@ -790,11 +798,11 @@ body{
 	}
 	&_slidesBox{
 		min-width: 555px;
-		height: 90px;
+		min-height: 90px;
 	}
 	&_slide{
 		display: inline-block;
-		width: 181px;
+		width: 191px;
 		margin: 0;
 	}
 	
@@ -827,7 +835,6 @@ body{
 		position: relative;
 		z-index: 1;
 		min-height: 100px;
-		height: 100px;
 		background: $darkBlue;
 		color: #fff;
 		text-align: center;
@@ -910,19 +917,26 @@ body{
 		&_mobileMenu{
 			display: block;
 			zoom: 0.7;
+			-moz-transform: scale(0.7);
+			-moz-transform-origin: top center;
 			top: 5px;
 		}
 		&_logo{
-			zoom: 0.7;
+			zoom: 0.6;
+			-moz-transform: scale(0.6);
+			-moz-transform-origin: top center;
 			left: 50%;
 			margin-left: -35px;
+			margin-top: 3px;
+		}
+		&_list{
+			top: 60px;
 		}
 		&_listItem{
 			border-bottom: 1px solid #000;
 			margin-top: -1px;
 			display: block;
 			min-height: 20px;
-			top: 60px;
 			margin: 0;
 			background: #fff;
 			display: none;
@@ -956,6 +970,8 @@ body{
 	.slider{
 		&_content{
 			zoom: 0.8;
+			-moz-transform: scale(0.8);
+			-moz-transform-origin: center;
 			margin-top: 0;
 		}
 		&_text{
@@ -965,6 +981,7 @@ body{
 		}
 		&_form{
 			display: block;
+			margin-left: 25px;
 		}
 	}
 	.ourClases{
@@ -979,6 +996,7 @@ body{
 		}
 		&_content{
 			float: none;
+			margin-left: 0;
 		}
 		&_title{
 			margin-top: 20px;
@@ -986,6 +1004,7 @@ body{
 	}
 	.gallery{
 		&_imgBlock{
+			display: inline-block;
 			zoom: 0.7;
 		}
 		&_imgBlock:hover &_icon{
@@ -1017,13 +1036,19 @@ body{
 		&_slides{
 			top: 50px;
 			zoom: 0.5;
+			-moz-transform: scale(0.5);
+			-moz-transform-origin: center;
+			margin-top: -70px;
+			margin-bottom: -70px;
 		}
 		&_previousBtnBackground{
 			zoom: 1.5;
+			-moz-transform: scale(1.5);
 			top: 80px;
 		}
 		&_nextBtnBackground{
 			zoom: 1.5;
+			-moz-transform: scale(1.5);
 			top: 80px;
 		}
 	}
@@ -1058,11 +1083,13 @@ body{
 			top: 5px;
 			left: -40px;
 			zoom: 1.5;
+			-moz-transform: scale(1.5);
 		}
 		&_nextBtnBackground{
 			top: 5px;
 			right: -40px;
 			zoom: 1.5;
+			-moz-transform: scale(1.5);
 		}
 	}
 	.pageFooter{
@@ -1118,7 +1145,7 @@ body{
 		&_buyNow{
 			zoom: 0.6;
 		}
-	}
+
 	.pageFooter{
 		&_about{
 			float: none;
@@ -1139,4 +1166,5 @@ body{
 }
 @media screen and(orientation:landscape)and(max-width: 1024px){
 	
+}
 }
